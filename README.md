@@ -35,3 +35,7 @@ bun run test:e2e
 ## License
 
 - The source code of this project is licensed under MIT (see `LICENSE`).
+
+## References
+
+- Best practices collection: `BEST_PRACTICES.md`
