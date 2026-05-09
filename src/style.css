@@ -1,0 +1,64 @@
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: #112233;
+  background: radial-gradient(circle at top right, #fff4de 0%, #ffe2c2 40%, #ffd8c0 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.layout {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hud {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(17, 34, 51, 0.15);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.hud h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.hud p {
+  margin: 0.35rem 0 0;
+  opacity: 0.8;
+}
+
+.score {
+  margin-top: 0.75rem;
+  font-weight: 700;
+}
+
+.stage-card {
+  border-radius: 16px;
+  background: rgba(250, 252, 255, 0.75);
+  border: 1px solid rgba(17, 34, 51, 0.1);
+  padding: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 1rem;
+  }
+}
