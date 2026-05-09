@@ -31,7 +31,7 @@ export class MainScene {
       fontSize: 18,
       fill: 0xffffff,
     });
-    this.hint = new Text({ text: "Bouge la souris pour jouer", style: uiStyle });
+    this.hint = new Text({ text: "Move the mouse to play", style: uiStyle });
 
     this.root.addChild(this.target);
     this.root.addChild(this.player);

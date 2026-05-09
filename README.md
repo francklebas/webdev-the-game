@@ -1,8 +1,8 @@
 # Boilerplate Vue + PixiJS
 
-Base de depart pour creer un jeu video web avec Vue 3 (UI/HUD) et PixiJS (rendu 2D GPU).
+Starter template to build a web game with Vue 3 (UI/HUD) and PixiJS (GPU 2D rendering).
 
-## Lancer le projet
+## Run the project
 
 ```bash
 bun install
@@ -21,17 +21,17 @@ bun run test:e2e
 
 ## Structure
 
-- `src/App.vue`: shell de l'interface (HUD + score).
-- `src/components/GameCanvas.vue`: composant Vue qui monte/demonte le canvas Pixi.
-- `src/game/createGameApp.ts`: bootstrap du moteur Pixi (app, ticker, resize).
-- `src/game/scenes/MainScene.ts`: scene principale (display list, interactions, update).
-- `src/game/systems/scoreSystem.ts`: logique testable de score.
+- `src/App.vue`: UI shell (HUD + score).
+- `src/components/GameCanvas.vue`: Vue component that mounts/unmounts the Pixi canvas.
+- `src/game/createGameApp.ts`: Pixi engine bootstrap (app, ticker, resize).
+- `src/game/scenes/MainScene.ts`: main scene (display list, interactions, update).
+- `src/game/systems/scoreSystem.ts`: testable score logic.
 
 ## Notes
 
-- Le boilerplate est pret pour separer la logique de jeu (`src/game`) de l'interface (`src/components`, `src/App.vue`).
-- Tu peux ajouter un systeme d'entites/scenes dans `src/game` sans toucher a la couche Vue.
+- The boilerplate is ready to keep game logic (`src/game`) separate from UI (`src/components`, `src/App.vue`).
+- You can add an entity/scene system in `src/game` without changing the Vue layer.
 
-## Licence
+## License
 
-- Le code source de ce projet est sous licence MIT (voir `LICENSE`).
+- The source code of this project is licensed under MIT (see `LICENSE`).
